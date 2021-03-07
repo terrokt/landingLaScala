@@ -1,0 +1,23 @@
+body {
+  @include AvenirS;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  @include AvenirXl;
+  font-size: 110px;
+}
+h2 {
+  @include AvenirL;
+  font-size: 36px;
+  // text-align: center;
+}
+h3 {
+  @include AvenirM;
+  font-size: 30px;
+}
