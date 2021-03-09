@@ -21,3 +21,21 @@ h3 {
   @include AvenirM;
   font-size: 30px;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+.section-inner {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: $base * 18;
+  padding-bottom: $base * 18;
+  &--wide {
+    max-width: 1290px;
+    padding: $base * 3 $base * 4;
+  }
+}
+.btn {
+  padding: $base * 5 $base * 15;
+  font-size: $fs-s;
+}

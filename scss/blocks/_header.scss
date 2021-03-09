@@ -1,0 +1,24 @@
+.section-header {
+  .section-inner {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.1);
+  }
+  .header-navigation {
+    @include listNone;
+    display: flex;
+    align-items: center;
+    margin-left: $base * 20;
+
+    &__item {
+      &:not(:first-child) {
+        margin-left: 32px;
+      }
+    }
+  }
+  .header-contacts {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+}
