@@ -31,61 +31,79 @@
     }
   }
   &-content {
-    box-shadow: 0 2px 50px 0 rgba(74, 74, 74, 0.1);
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 2px #e8e8e8;
     background-color: #fff;
-    &__item {
-      display: grid;
-      align-items: center;
-      grid-template-columns: 1fr repeat(3, 2fr);
-      grid-template-rows: repeat(8, 50px);
-
-      .time {
-        @include AvenirL;
-        text-align: center;
-        line-height: 50px;
-
-        &-1 {
-          grid-column-start: 2;
-          grid-column-end: 3;
-        }
-        // &-2 {
-        // }
-        // &-3 {
-        // }
-      }
-      .week-day {
-        @include AvenirL;
-        text-align: center;
-        line-height: 50px;
-        &-1 {
-          grid-row-start: 2;
-          grid-row-end: 3;
-        }
-        &-2 {
-          grid-row-start: 3;
-          grid-row-end: 4;
-        }
-        &-3 {
-          grid-row-start: 4;
-          grid-row-end: 5;
-        }
-        &-4 {
-          grid-row-start: 5;
-          grid-row-end: 6;
-        }
-        &-5 {
-          grid-row-start: 6;
-          grid-row-end: 7;
-        }
-        &-6 {
-          grid-row-start: 7;
-          grid-row-end: 8;
-        }
-        &-7 {
-          grid-row-start: 8;
-          grid-row-end: 9;
-        }
-      }
+    box-shadow: 0 2px 50px 0 rgba(74, 74, 74, 0.1);
+    .fsz-l {
+      font-size: $fs-l;
+    }
+    th {
+      border: 1px dashed #f0f0f0;
+      padding: $base * 6 0;
+    }
+    td {
+      border: 1px dashed #f0f0f0;
+      padding-left: $base * 8;
     }
   }
+  // &-content {
+  //   box-shadow: 0 2px 50px 0 rgba(74, 74, 74, 0.1);
+  //   background-color: #fff;
+  //   &__item {
+  //     display: grid;
+  //     align-items: center;
+  //     grid-template-columns: 1fr repeat(3, 2fr);
+  //     grid-template-rows: repeat(8, 50px);
+
+  //     .time {
+  //       @include AvenirL;
+  //       text-align: center;
+  //       line-height: 50px;
+
+  //       &-1 {
+  //         grid-column-start: 2;
+  //         grid-column-end: 3;
+  //       }
+  //       // &-2 {
+  //       // }
+  //       // &-3 {
+  //       // }
+  //     }
+  //     .week-day {
+  //       @include AvenirL;
+  //       text-align: center;
+  //       line-height: 50px;
+  //       &-1 {
+  //         grid-row-start: 2;
+  //         grid-row-end: 3;
+  //       }
+  //       &-2 {
+  //         grid-row-start: 3;
+  //         grid-row-end: 4;
+  //       }
+  //       &-3 {
+  //         grid-row-start: 4;
+  //         grid-row-end: 5;
+  //       }
+  //       &-4 {
+  //         grid-row-start: 5;
+  //         grid-row-end: 6;
+  //       }
+  //       &-5 {
+  //         grid-row-start: 6;
+  //         grid-row-end: 7;
+  //       }
+  //       &-6 {
+  //         grid-row-start: 7;
+  //         grid-row-end: 8;
+  //       }
+  //       &-7 {
+  //         grid-row-start: 8;
+  //         grid-row-end: 9;
+  //       }
+  //     }
+  //   }
+  // }
 }
