@@ -38,72 +38,44 @@
     box-shadow: 0 2px 50px 0 rgba(74, 74, 74, 0.1);
     .fsz-l {
       font-size: $fs-l;
+      font-weight: $fw-bold;
     }
+
     th {
       border: 1px dashed #f0f0f0;
       padding: $base * 6 0;
     }
     td {
       border: 1px dashed #f0f0f0;
-      padding-left: $base * 8;
+      padding: $base * 4;
+      &:not(:first-child) {
+        width: 330px;
+      }
+    }
+    &__person {
+      border: 1px solid #e8e8e8;
+      border-left: 2px solid #9b9b9b;
+      border-radius: 4px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      padding: $base * 4 0 $base * 4 $base * 4;
+      &-suptitle {
+        font-size: $fs-xs;
+        margin-left: $base * 10;
+      }
+
+      &--gray {
+        border-left: 2px solid #9b9b9b;
+      }
+      &--green {
+        border-left: 2px solid #b8e986;
+      }
+      &--blue {
+        border-left: 2px solid #4e8df1;
+      }
+      &--orange {
+        border-left: 2px solid #f5a623;
+      }
     }
   }
-  // &-content {
-  //   box-shadow: 0 2px 50px 0 rgba(74, 74, 74, 0.1);
-  //   background-color: #fff;
-  //   &__item {
-  //     display: grid;
-  //     align-items: center;
-  //     grid-template-columns: 1fr repeat(3, 2fr);
-  //     grid-template-rows: repeat(8, 50px);
-
-  //     .time {
-  //       @include AvenirL;
-  //       text-align: center;
-  //       line-height: 50px;
-
-  //       &-1 {
-  //         grid-column-start: 2;
-  //         grid-column-end: 3;
-  //       }
-  //       // &-2 {
-  //       // }
-  //       // &-3 {
-  //       // }
-  //     }
-  //     .week-day {
-  //       @include AvenirL;
-  //       text-align: center;
-  //       line-height: 50px;
-  //       &-1 {
-  //         grid-row-start: 2;
-  //         grid-row-end: 3;
-  //       }
-  //       &-2 {
-  //         grid-row-start: 3;
-  //         grid-row-end: 4;
-  //       }
-  //       &-3 {
-  //         grid-row-start: 4;
-  //         grid-row-end: 5;
-  //       }
-  //       &-4 {
-  //         grid-row-start: 5;
-  //         grid-row-end: 6;
-  //       }
-  //       &-5 {
-  //         grid-row-start: 6;
-  //         grid-row-end: 7;
-  //       }
-  //       &-6 {
-  //         grid-row-start: 7;
-  //         grid-row-end: 8;
-  //       }
-  //       &-7 {
-  //         grid-row-start: 8;
-  //         grid-row-end: 9;
-  //       }
-  //     }
-  //   }
-  // }
 }
