@@ -1,3 +1,28 @@
 .section-price {
   background-color: #f8f8f8;
 }
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: $base * 15;
+  &-item {
+    display: flex;
+    flex-direction: column;
+
+    height: 566px;
+    flex-basis: 32%;
+    box-shadow: 0 2px 50px 0 rgba(74, 74, 74, 0.1);
+    background-color: #ffffff;
+    border: solid 1px #e8e8e8;
+    padding: 0 0 32px;
+    &__photo {
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: $base * 6 0 $base * 6 $base * 6;
+    }
+  }
+}

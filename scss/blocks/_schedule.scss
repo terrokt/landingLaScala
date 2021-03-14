@@ -36,6 +36,9 @@
     border: solid 2px #e8e8e8;
     background-color: #fff;
     box-shadow: 0 2px 50px 0 rgba(74, 74, 74, 0.1);
+    &--kids {
+      display: none;
+    }
     .fsz-l {
       font-size: $fs-l;
       font-weight: $fw-bold;
@@ -53,12 +56,16 @@
       }
     }
     &__person {
+      height: 60px;
+      position: relative;
       border: 1px solid #e8e8e8;
       border-left: 2px solid #9b9b9b;
       border-radius: 4px;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
-      padding: $base * 4 0 $base * 4 $base * 4;
+      display: flex;
+      align-items: center;
+      padding-left: 12px;
       &-suptitle {
         font-size: $fs-xs;
         margin-left: $base * 10;
@@ -76,6 +83,15 @@
       &--orange {
         border-left: 2px solid #f5a623;
       }
+    }
+  }
+}
+.table-row {
+  .wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+    .tabs-content__person {
+      flex-basis: 48%;
     }
   }
 }
